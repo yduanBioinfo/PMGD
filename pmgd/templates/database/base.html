@@ -1,5 +1,31 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'database/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title> plant mitochondrion genome database </title>
 </head>
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="nav navbar-nav">
+            <ul class='nav nav-pills'>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Genome Browser</a></li>
+                <li><a href="#" class="dropdown" class="dropdown-toggle" data-toggle="dropdown">Tools</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">tool1</a></li>
+                        <li><a href="#">blast</a></li>
+                        <li><a href="#">tool3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Turorial</a></li>
+                <li><a href="#">upload</a></li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>
