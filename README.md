@@ -5,11 +5,12 @@ Copyright (C) 2018 You Duan, Yi-heng Hu
 
 **Contact**
 
-yduan@nwu.edu.cn, berlin@nwu.edu.cn
+yduan94@ihb.ac.cn, berlin@nwu.edu.cn
 
 **Prerequisites**
 
-Python
+Python 3.6.1
+django 2.0
 
 **Introduction**
 
