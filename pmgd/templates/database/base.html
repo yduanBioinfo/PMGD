@@ -2,39 +2,39 @@
 
 <html lang="en">
 <head>
-    {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'database/style.css' %}" />
-    <link rel="stylesheet" type="text/css" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css"/>
-    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!--enable hover dropdown which bootstrap don't support by default.-->
-    <script src="{% static 'database/js/bootstrap-hover-dropdown.min.js' %}"></script>
-    <title> plant mitochondrion genome database </title>
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'database/style.css' %}" />
+  <link rel="stylesheet" type="text/css" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!--enable hover dropdown which bootstrap don't support by default.-->
+  <script src="{% static 'database/js/bootstrap-hover-dropdown.min.js' %}"></script>
+  <title> plant mitochondrion genome database </title>
 </head>
 <body>
-    <!--navbar-->
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="nav navbar-nav">
-            <ul class='nav nav-pills'>
-                <li><a href="#" class="dorpdown" data-toggle="dropdown" data-hover="dropdown">Home</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">What's new</a></li>
-                        <li><a href="#">Contact us</a></li>
-                    </ul>
-                </li>
-                <li><a href="{% url 'database:genome_browser' %}">Genome Browser</a></li>
-                <li><a href="#" class="dropdown" data-toggle="dropdown" data-hover="dropdown">Tools</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">tool1</a></li>
-                        <li><a href="#">blast</a></li>
-                        <li><a href="#">tool3</a></li>
-                    </ul>
-                </li>
-                <li><a href="{% url 'database:tutorial' %}">Tutorial</a></li>
-                <li><a href="{% url 'database:upload' %}">upload</a></li>
-            </ul>
-        </div>
-    </nav>
+  <!--navbar-->
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="nav navbar-nav">
+      <ul class='nav nav-pills'>
+        <li><a href="#" class="dorpdown" data-toggle="dropdown" data-hover="dropdown">Home</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">About</a></li>
+            <li><a href="#">What's new</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </li>
+        <li><a href="{% url 'database:genome_browser' %}">Genome Browser</a></li>
+        <li><a href="#" class="dropdown" data-toggle="dropdown" data-hover="dropdown">Tools</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">tool1</a></li>
+            <li><a href="#">blast</a></li>
+            <li><a href="#">tool3</a></li>
+          </ul>
+        </li>
+        <li><a href="{% url 'database:tutorial' %}">Tutorial</a></li>
+        <li><a href="{% url 'database:upload' %}">upload</a></li>
+      </ul>
+    </div>
+  </nav>
 </body>
 </html>
